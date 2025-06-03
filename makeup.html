@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <body>
+
+  <header>
+    <div class="logo">Twofold Media</div>
+    <nav>
+  <a href="index.html">Overview</a>
+  <a href="gallery.html">Gallery</a>
+  
+  <div class="dropdown">
+    <a href="#">Services ▾</a>
+    <div class="dropdown-content">
+      <a href="passport.html">Passport Size Photos</a>
+      <a href="makeup.html">Makeup Services</a>
+      <a href="studio.html">Studio Sessions</a>
+      <a href="graduation.html">Graduation</a>
+      <a href="wedding.html">Wedding</a>
+    </div>
+  </div>
+
+  <a href="#contact.html">Contact</a>
+<div class="follow-container">
+  <button class="follow-toggle">
+    <i class="fas fa-plus"></i> Follow
+  </button>
+  <div class="follow-dropdown">
+    <a href="https://www.instagram.com/twofoldmediazm/" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100064117329638" target="_blank">
+      <i class="fab fa-facebook"></i> Facebook
+    </a>
+    <a href="https://tiktok.com/@yourusername" target="_blank">
+      <i class="fab fa-tiktok"></i> TikTok
+    </a>
+  </div>
+</div>
+</nav>
+  </header>
+
+</div>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <style>
+        /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      color: #000000;
+      background-color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #000;
+    }
+
+    header .logo {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f39c12;
+    }
+
+    #hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    a {
+      color: inherit;
+    }
+    nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    padding: 15px 30px;
+    font-family: sans-serif;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    position: relative;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f39c12;
+    color: black;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f2f2f2;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .follow-btn {
+    background-color: #1da1f2;
+    color: white;
+    padding: 8px 16px;
+    margin-left: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .follow-btn:hover {
+    background-color: #0d8ddb;
+  }
+.follow-container {
+  position: relative;
+  display: inline-block;
+}
+
+.follow-toggle {
+  background: none;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 14px;
+  transition: color 0.3s ease;
+}
+
+.follow-toggle:hover {
+  color: #1da1f2;
+}
+
+.follow-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background-color: #fff;
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.follow-dropdown a {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background 0.2s;
+}
+
+.follow-dropdown a i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.follow-dropdown a:hover {
+  background-color: #f5f5f5;
+}
+
+.follow-container:hover .follow-dropdown {
+  display: block;
+}
+  
+.details-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.download-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.book-now-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.download-button, .book-now-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+</style>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Book Make up Session – Twofold Media</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Add this CSS if not using style.css */
+    .hero-header {
+      background-image: url('images/makeup.jpg'); /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero-header {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+      
+    }
+
+    main {
+      padding: 30px;
+    }
+     #packages {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#packages h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#packages p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #444;
+}
+    main {
+      padding: 30px;
+    }
+    .download-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  text-align: center
+}
+
+.download-btn:hover {
+  background-color: #444;
+  text-align: center
+}
+
+  </style>
+  </style>
+</head>
+<body>
+  <header class="hero-header">
+    <h1>Book for Make up Services</h1>
+  </header>
+ <section class="details-section">
+    <h2>Available Services</h2>
+    <ul>
+      <li>Bridal Makeup</li>
+      <li>Photoshoot Glam</li>
+      <li>Corporate Look</li>
+      <li>Traditional/Cultural Makeup</li>
+      <li>Natural/Soft Beat</li>
+    </ul>
+    <p>All services include touch-ups, lashes (if required), and pre-session consultation.</p>
+  </section>
+   <!-- Download Form Notice -->
+  <section class="download-section">
+    <p>Please download our packages before proceeding:</p>
+    <a href="forms/passport-booking-form.pdf" class="download-button" download>📄 Download Packeges </a>
+  </section>
+
+  <main>
+    <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" 
+            width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">
+      Loading…
+    </iframe>
+    <br><br>
+  
+  </main>
+</body>
+</html>
+
+
+
+
+
+
+ <footer>
+    <p>&copy; 2025 Twofold Media. All rights reserved.</p>
+  </footer>
+
+</body>
+</html> 

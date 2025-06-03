@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <body>
+
+  <header>
+    <div class="logo">Twofold Media</div>
+    <nav>
+  <a href="index.html">Overview</a>
+  <a href="gallery.html">Gallery</a>
+  
+  <div class="dropdown">
+    <a href="#">Services ▾</a>
+    <div class="dropdown-content">
+      <a href="passport.html">Passport Size Photos</a>
+      <a href="makeup.html">Makeup Services</a>
+      <a href="studio.html">Studio Sessions</a>
+      <a href="graduation.html">Graduation</a>
+      <a href="wedding.html">Wedding</a>
+    </div>
+  </div>
+
+  <a href="#contact.html">Contact</a>
+<div class="follow-container">
+  <button class="follow-toggle">
+    <i class="fas fa-plus"></i> Follow
+  </button>
+  <div class="follow-dropdown">
+    <a href="https://www.instagram.com/twofoldmediazm/" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100064117329638" target="_blank">
+      <i class="fab fa-facebook"></i> Facebook
+    </a>
+    <a href="https://tiktok.com/@yourusername" target="_blank">
+      <i class="fab fa-tiktok"></i> TikTok
+    </a>
+  </div>
+</div>
+</nav>
+  </header>
+
+</div>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <style>
+        /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      color: #000000;
+      background-color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #000;
+    }
+
+    header .logo {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f39c12;
+    }
+
+    #hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    a {
+      color: inherit;
+    }
+    nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    padding: 15px 30px;
+    font-family: sans-serif;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    position: relative;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f39c12;
+    color: black;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f2f2f2;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .follow-btn {
+    background-color: #1da1f2;
+    color: white;
+    padding: 8px 16px;
+    margin-left: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .follow-btn:hover {
+    background-color: #0d8ddb;
+  }
+.follow-container {
+  position: relative;
+  display: inline-block;
+}
+
+.follow-toggle {
+  background: none;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 14px;
+  transition: color 0.3s ease;
+}
+
+.follow-toggle:hover {
+  color: #1da1f2;
+}
+
+.follow-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background-color: #fff;
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.follow-dropdown a {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background 0.2s;
+}
+
+.follow-dropdown a i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.follow-dropdown a:hover {
+  background-color: #f5f5f5;
+}
+
+.follow-container:hover .follow-dropdown {
+  display: block;
+}
+</style>
+
+ 
+
+<section>
+  <meta charset="UTF-8">
+  <title>Corporate Gallery - Twofold Media</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</section>
+<body>
+
+  <!-- Page Banner -->
+  <section class="gallery-header" style="background-image: url('images/hero.jpg');">
+    <h2>Corporate Gallery</h2>
+   
+  </section>
+  <section class="book-now-section">
+  <p>Excellence.</p>
+   </section>
+<section class="gallery-masonry">
+  <div class="left-column">
+    <img src="images/corporate 10.jpg" alt="Wedding Couple 1">
+    <img src="images/corporate 9.jpg" alt="Wedding Couple 1">
+  </div>
+  <div class="right-column">
+    <img src="images/corporate.jpg" alt="Wedding Main Photo">
+  </div>
+  
+</section>
+
+
+</body>
+
+<style>
+ 
+
+  .gallery-header {
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 20px;
+}
+
+.gallery-header h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.gallery-photos {
+  padding: 40px 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+.gallery-masonry {
+  display: flex;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.gallery-masonry .left-column,
+.gallery-masonry .right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.gallery-masonry .left-column {
+  flex: 1;
+    width: 100%;
+  height: 100%;            /* Set your desired height */
+  object-fit: cover;        /* Crops while maintaining aspect ratio */
+  border-radius: 3px;
+
+   }
+
+.gallery-masonry .right-column {
+  flex: 2;
+
+}
+
+.gallery-masonry img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+</style>
+ <!-- Grid Layout -->
+  <section class="gallery-section">
+    <div class="gallery-grid">
+      <img src="images/corporate 8.jpg" alt="">
+      <img src="images/corporate 7.jpg" alt="">
+      <img src="images/corporate 4.jpg" alt="">
+      
+    </div>
+  </section>
+<style>
+  .gallery-grid1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 40px 20px;
+}
+
+.gallery-grid1 img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 300px;
+}
+</style>
+
+</style>
+ <!-- Grid Layout -->
+  <section class="gallery-section">
+    <div class="gallery-grid">
+      <img src="images/corporate 2.jpg" alt="">
+      <img src="images/corporate 3.jpg" alt="">
+      
+    </div>
+  </section>
+<style>
+
+  .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 40px 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 300px;
+}
+</style>
+
+
+</style>
+ <!-- Grid Layout -->
+  <section class="gallery-section">
+    <div class="gallery-grid">
+      <img src="images/corporate 1.jpg" alt="">
+      <img src="images/corporate 5.jpg" alt="">
+      <img src="images/corporate 6.jpg" alt="">
+      
+    </div>
+  </section>
+
+    <style>
+  .gallery-grid1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 40px 20px;
+}
+
+.gallery-grid1 img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 300px;
+}
+</style>
+<section class="book-now-section">
+  <p>If you're impressed by our wedding work, book your session below!</p>
+  <a href="corporate.html" class="book-now-button">Book Now</a>
+</section>
+<style>
+.book-now-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f7f7f7;
+  margin-top: 40px;
+}
+
+.book-now-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.book-now-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.book-now-button:hover {
+  background-color: #444;
+}
+
+</style>
+ <footer>
+    <p>&copy; 2025 Twofold Media. All rights reserved.</p>
+  </footer>
+
+</body>
+</html> 

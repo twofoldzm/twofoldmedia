@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <meta charset="UTF-8" />
+  <meta name="v
+  iewpor
+  t" content="width=device-width, initial-scale=1.0" />
+<title>Twofold Media</title>
+  <style>
+        /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      color: #000000;
+      background-color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #000;
+    }
+
+    header .logo {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f39c12;
+    }
+
+    #hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    a {
+      color: inherit;
+    }
+    nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    padding: 15px 30px;
+    font-family: sans-serif;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    position: relative;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f39c12;
+    color: black;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f2f2f2;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .follow-btn {
+    background-color: #1da1f2;
+    color: white;
+    padding: 8px 16px;
+    margin-left: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .follow-btn:hover {
+    background-color: #0d8ddb;
+  }
+.follow-container {
+  position: relative;
+  display: inline-block;
+}
+
+.follow-toggle {
+  background: none;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 14px;
+  transition: color 0.3s ease;
+}
+
+.follow-toggle:hover {
+  color: #1da1f2;
+}
+
+.follow-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background-color: #fff;
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.follow-dropdown a {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background 0.2s;
+}
+
+.follow-dropdown a i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.follow-dropdown a:hover {
+  background-color: #f5f5f5;
+}
+
+.follow-container:hover .follow-dropdown {
+  display: block;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Twofold Media</div>
+    <nav>
+  <a href="index.html">Overview</a>
+  <a href="gallery.html">Gallery</a>
+  
+  <div class="dropdown">
+    <a href="#">Services ▾</a>
+    <div class="dropdown-content">
+      <a href="passport.html">Passport Size Photos</a>
+      <a href="makeup.html">Makeup Services</a>
+      <a href="studio.html">Studio Sessions</a>
+      <a href="graduation.html">Graduation</a>
+      <a href="wedding.html">Wedding</a>
+    </div>
+  </div>
+
+  <a href="#contact.html">Contact</a>
+<div class="follow-container">
+  <button class="follow-toggle">
+    <i class="fas fa-plus"></i> Follow
+  </button>
+  <div class="follow-dropdown">
+    <a href="https://www.instagram.com/twofoldmediazm/" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100064117329638" target="_blank">
+      <i class="fab fa-facebook"></i> Facebook
+    </a>
+    <a href="https://tiktok.com/@yourusername" target="_blank">
+      <i class="fab fa-tiktok"></i> TikTok
+    </a>
+  </div>
+</div>
+</nav>
+  </header>
+
+</div>
+
+  <section id="HOME">
+  <h2>Welcome to Twofold Media</h2>
+    <style>
+      #HOME {
+      background-image: url('images/graduation-bg.jpg'); /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+      color: rgb(0, 0, 0);
+      padding: 100px 20px;
+      text-align: center;
+      }
+      #booking {
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.booking-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.booking-card {
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.booking-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.booking-card h3 {
+  margin: 15px 0 10px;
+  font-size: 18px;
+}
+
+.booking-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #f39c12;
+}
+#contact {
+background-color: #f7f5f5;
+  padding: 60px 20px;
+  text-align: center;
+}
+#about {
+  background-color: #f7f5f5;
+  padding: 60px 20px;
+  text-align: center;
+}
+#clients {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#clients h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.clients-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.clients-logos img {
+  height: 60px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.clients-logos img:hover {
+  filter: grayscale(0%);
+}
+.clients-logos a:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+    </style>
+    <p>th precision and artistry. We specialize in lifestyle, portrait, and commercial photography that tells compelling visual stories.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+At Tw0fold media, we specialize in capturing life’s most meaningful moments weddings, Chilanga Mulilo, engagements, and love stories of all kinds. With a creative eye and a deep respect for culture and tradition, we blend art and emotion to deliver timeless photographs that speak to the heart.
+
+Our goal is simple: to make your memories last forever. Whether it's the quiet glances, the loud celebrations, or the intricate details, we are there to preserve it all beautifully and authentically.    
+        
+<section id="moto">
+  <h3>Let us tell your story, one frame at a time</h3>
+  </section>.</p>
+  </section>
+<section id="booking">
+  <h2>Book a Session</h2>
+  <div class="booking-grid">
+    <div class="booking-card">
+      <img src="images/graduation.jpg" alt="Graduation">
+      <h3>Book for Graduation</h3>
+      <p>Capture the joy of your big achievement.</p>
+      <a href="graduation.html" class="btn">BOOK NOW
+      </a>
+    </div>
+    <div class="booking-card">
+      <img src="images/wedding.jpg" alt="Wedding">
+      <h3>Book for Wedding</h3>
+      <p>Timeless moments of your special day.</p>
+      <a href="wedding.html" class="btn">BOOK NOW</a>
+    </div>
+    <div class="booking-card">
+      <img src="images/chilanga.jpg" alt="Chilanga Mulilo">
+      <h3>Book for Chilanga Mulilo</h3>
+      <p>Preserve the beauty of this rich tradition.</p>
+      <a href="chilanga.html" class="btn">BOOK NOW</a>
+    </div>
+    <div class="booking-card">
+      <img src="images/birthday.jpg" alt="Birthday">
+      <h3>Book for Birthday</h3>
+      <p>Capture the joy of your big achievement.</p>
+      <a href="birthday.html" class="btn">BOOK NOW</a>
+  </div>
+  <div class="booking-card">
+      <img src="images/studiosession.jpg" alt="Studio session">
+      <h3>Book for Studio session</h3>
+      <p>Capture the joy of your big achievement.</p>
+      <a href="studio.html" class="btn">BOOK NOW</a>
+      </div>
+      <div class="booking-card">
+      <img src="images/corporate.jpg" alt="Corporate">
+      <h3>Book for Corporate</h3>
+      <p>Capture the joy of your big achievement.</p>
+      <a href="corporate.html" class="btn">BOOK NOW</a>
+</section>
+
+<section id="clients">
+  
+  <h2>Our Clients</h2>
+  <div class="clients-logos">
+    <a href="https://www.sc.com/" target="_blank">
+      <img src="images/standard-chartered.png" alt="Standard Chartered">
+    </a>
+    <a href="https://www.client2.com" target="_blank">
+      <img src="images/SHEPIZ.png" alt="SHEPIZ">
+    </a>
+    <a href="https://www.client3.com" target="_blank">
+      <img src="images/Moja.jpg" alt="MOJA">
+    </a>
+      <a href="https://www.client3.com" target="_blank">
+      <img src="images/UNZALARU.jpg" alt="UNZALARU">
+      </a>
+    <!-- Add more as needed -->
+  </div>
+</section>
+
+
+  <section id="contact">
+    <p>Email: <a href="mailto:info@twofoldmedia.com">twofoldmediazm@gmail.com</a></p>
+    <p>Phone: +260 123 456 789</p>
+    <p>Instagram: <a href="https://www.instagram.com/twofoldmediazm/" target="_blank">@twofoldmediazm</a></p>
+  </section>
+<footer>
+    <p>&copy; 2025 Twofold Media. All rights reserved.</p>
+  </footer>
+
+</body>
+</html> 
